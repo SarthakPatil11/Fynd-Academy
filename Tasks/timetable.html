@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        .html{
+            background-color: rgb(255, 157, 0);
+        }
+        .css{
+            background-color: rgb(97, 97, 255);
+        }
+        .javascript{
+            background-color: yellow;
+        }
+        .react{
+            background-color: aqua;
+        }
+        .node{
+            background-color: rgb(0, 184, 0);
+        }
+        .assignment{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <colgroup>
+            <col style="background-color: rgb(255, 0, 0);">
+        </colgroup>
+        <thead>
+            <tr style="background-color: rgb(255, 0, 0);">
+                <th>TIME\DAY</th>
+                <th>MODAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+                <th>SATURDAY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>10.00 - 11.00</th>
+                <td class="html">HTML</td>
+                <td class="css">CSS</td>
+                <td class="javascript">Javascript</td>
+                <td class="react">React</td>
+                <td class="node">Node</td>
+                <td rowspan="2" class="assignment">Assignment-1</td>
+            </tr>
+            <tr>
+                <th>11.00 - 12.00</th>
+                <td class="css">CSS</td>
+                <td class="html">HTML</td>
+                <td class="react">React</td>
+                <td class="node">Node</td>
+                <td class="javascript">Javascript</td>
+            </tr>
+            <tr>
+                <th>12.00 - 12.45</th>
+                <th colspan="6" style="background-color: white;">BREAK</th>
+            </tr>
+            <tr>
+                <th>12.45 - 1.45</th>
+                <td class="javascript">Javascript</td>
+                <td class="react">React</td>
+                <td class="css">CSS</td>
+                <td class="html">HTML</td>
+                <td class="node">Node</td>
+                <td rowspan="2" class="assignment">Assignment-2</td>
+            </tr>
+            <tr>
+                <th>01.45 - 02.45</th>
+                <td class="react">React</td>
+                <td class="javascript">Javascript</td>
+                <td class="node">Node</td>
+                <td class="css">CSS</td>
+                <td class="html">HTML</td>
+            </tr>
+            <tr>
+                <th>02.45 - 03.00</th>
+                <th colspan="7" style="background-color: white;">BREAK</th>
+            </tr>
+            <tr>
+                <th>03.00 - 04.00</th>
+                <td class="node">Node</td>
+                <td class="html">HTML</td>
+                <td class="css">CSS</td>
+                <td class="javascript">Javascript</td>
+                <td class="react">React</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
