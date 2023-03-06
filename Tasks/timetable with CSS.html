@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable with CSS</title>
+    <style>
+        table{
+            background-color: rgb(255, 226, 185);
+            border-radius: 7px;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        th{
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        td{
+            font-family: Cursive;
+            font-size: smaller;
+            min-width: 100px;
+        }
+        
+        .h_img, .j_img, .r_img, .n_img, .a_img{
+            height: 250px;
+            width: inherit;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .html {
+            background-color: rgb(255, 184, 71);
+        }
+        .html .myDIV:hover + .h_img {
+        display: block;
+        }
+
+        .css {
+            background-color: rgb(105, 105, 255);
+        }
+        .css .myDIV:hover + .h_img {
+            display: block;
+        }
+
+        .javascript {
+            background-color: yellow;
+        }
+        .javascript .myDIV:hover + .j_img {
+            display: block;
+        }
+
+        .react {
+            background-color: aqua;
+        }
+        .react .myDIV:hover + .r_img {
+            display: block;
+        }
+
+        .node {
+            background-color: rgb(46, 193, 46);
+        }
+        .node .myDIV:hover + .n_img {
+            display: block;
+        }
+
+        .assignment {
+            background-color: greenyellow;
+        }
+        .assignment .myDIV:hover + .a_img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col style="background-color: rgb(255, 68, 68);">
+        </colgroup>
+        <thead>
+            <tr style="background-color: rgb(255, 68, 68);">
+                <th>TIME\DAY</th>
+                <th>MODAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+                <th>SATURDAY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>10.00 - 11.00</th>
+                <td class="html">
+                    <p class="myDIV">HTML</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="css">
+                    <p class="myDIV">CSS</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="javascript">
+                    <p class="myDIV">Javascript</p>
+                    <img class="j_img" src="./img/teacher/team-2.jpg" alt="js teacher">
+                </td>
+                <td class="react">
+                    <p class="myDIV">React</p>
+                    <img class="r_img" src="./img/teacher/team-3.jpg" alt="react teacher">
+                </td>
+                <td class="node">
+                    <p class="myDIV">Node</p>
+                    <img class="n_img" src="./img/teacher/team-4.jpg" alt="node teacher">
+                </td>
+                <td rowspan="2" class="assignment">
+                    <p class="myDIV">Assignment-1</p>
+                    <img class="a_img" src="./img/teacher/team-1.jpg" alt="assignment teacher">
+                </td>
+            </tr>
+            <tr>
+                <th>11.00 - 12.00</th>
+                <td class="css">
+                    <p class="myDIV">CSS</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="html">
+                    <p class="myDIV">HTML</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="react">
+                    <p class="myDIV">React</p>
+                    <img class="r_img" src="./img/teacher/team-3.jpg" alt="react teacher">
+                </td>
+                <td class="node">
+                    <p class="myDIV">Node</p>
+                    <img class="n_img" src="./img/teacher/team-4.jpg" alt="node teacher">
+                </td>
+                <td class="javascript">
+                    <p class="myDIV">Javascript</p>
+                    <img class="j_img" src="./img/teacher/team-2.jpg" alt="js teacher">
+                </td>
+            </tr>
+            <tr>
+                <th>12.00 - 12.45</th>
+                <td colspan="6" style="background-color: white;">BREAK</td>
+            </tr>
+            <tr>
+                <th>12.45 - 1.45</th>
+                <td class="javascript">
+                    <p class="myDIV">Javascript</p>
+                    <img class="j_img" src="./img/teacher/team-2.jpg" alt="js teacher">
+                </td>
+                <td class="react">
+                    <p class="myDIV">React</p>
+                    <img class="r_img" src="./img/teacher/team-3.jpg" alt="react teacher">
+                </td>
+                <td class="css">
+                    <p class="myDIV">CSS</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="html">
+                    <p class="myDIV">HTML</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="node">
+                    <p class="myDIV">Node</p>
+                    <img class="n_img" src="./img/teacher/team-4.jpg" alt="node teacher">
+                </td>
+                <td rowspan="2" class="assignment">
+                    <p class="myDIV">Assignment-2</p>
+                    <img class="a_img" src="./img/teacher/team-1.jpg" alt="assignment teacher">
+                </td>
+            </tr>
+            <tr>
+                <th>01.45 - 02.45</th>
+                <td class="react">
+                    <p class="myDIV">React</p>
+                    <img class="r_img" src="./img/teacher/team-3.jpg" alt="react teacher">
+                </td>
+                <td class="javascript">
+                    <p class="myDIV">Javascript</p>
+                    <img class="j_img" src="./img/teacher/team-2.jpg" alt="js teacher">
+                </td>
+                <td class="node">
+                    <p class="myDIV">Node</p>
+                    <img class="n_img" src="./img/teacher/team-4.jpg" alt="node teacher">
+                </td>
+                <td class="css">
+                    <p class="myDIV">CSS</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="html">
+                    <p class="myDIV">HTML</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+            </tr>
+            <tr>
+                <th>02.45 - 03.00</th>
+                <td colspan="6" style="background-color: white;">BREAK</td>
+            </tr>
+            <tr>
+                <th>03.00 - 04.00</th>
+                <td class="node">
+                    <p class="myDIV">Node</p>
+                    <img class="n_img" src="./img/teacher/team-4.jpg" alt="node teacher">
+                </td>
+                <td class="html">
+                    <p class="myDIV">HTML</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="css">
+                    <p class="myDIV">CSS</p>
+                    <img class="h_img" src="./img/teacher/team-1.jpg" alt="html teacher">
+                </td>
+                <td class="javascript">
+                    <p class="myDIV">Javascript</p>
+                    <img class="j_img" src="./img/teacher/team-2.jpg" alt="js teacher">
+                </td>
+                <td class="react">
+                    <p class="myDIV">React</p>
+                    <img class="r_img" src="./img/teacher/team-3.jpg" alt="react teacher">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
