@@ -1,0 +1,84 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+body{
+	background-image: url("./img/med3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sign_up {
+	height: 100%;
+	width: 100%;
+}
+
+.sign_up .card {
+	width: 400px;
+	padding: 10px;
+	margin-left: 39%;
+	background-color: white;
+	box-shadow: 10px 10px 20px -4px #000;
+	border-radius: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px;
+	margin: 5px 0 10px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+.clearfix a {
+	background-color: #04aa6d;
+	border-radius: 10px;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	text-decoration: none;
+}
+
+button:hover {
+	opacity: 1;
+}
+
+.cancelbtn {
+	padding: 14px 20px;
+	background-color: #f44336 !important;
+}
+
+.cancelbtn,
+.signupbtn {
+	float: left;
+}
+
+.container {
+	padding: 16px;
+}
+
+.clearfix{
+	display: flex;
+	justify-content: space-between;
+	content: "";
+	clear: both;
+}
