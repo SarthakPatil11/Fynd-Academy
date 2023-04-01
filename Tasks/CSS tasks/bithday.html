@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <style>
+        body {
+            background-color: bisque;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0%;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            height: 85vh;
+            width: 80vw;
+            box-shadow: 3px 6px 6px gray;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+        }
+        @media (max-width:830px) {
+            .card{
+                flex-direction: column;
+            }
+        }
+
+        .card img{
+            height: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="./img/birthday.jpeg" alt="">
+        <div class="txt">
+            <h2>HAPPY BIRTHDAY!!</h2>
+            <p>wish you happy Birthday</p>
+            <div class="muted">-Sarthak Patil</div>
+        </div>
+    </div>
+</body>
+
+</html>

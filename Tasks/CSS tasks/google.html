@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./img/chrome.png">
+    <title>New Tab</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(255, 223, 183);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+
+        .topsec {
+            display: flex;
+            flex-direction: row;
+            column-gap: 5px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: 10px;
+        }
+
+        .topsec div {
+            padding: 20px 5px 10px 10px;
+            height: 30px;
+        }
+
+        .topsec #more_icon {
+            word-spacing: -2.5px;
+            margin-top: 2px;
+        }
+
+        .topsec #profile img {
+            position: inherit;
+            width: 2rem;
+            border-radius: 50%;
+            margin-top: -8px;
+        }
+
+        .mainsec {
+            height: 350px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        .mainsec #google {
+            width: 310px;
+        }
+
+        .mainsec .bar {
+            width: 550px;
+            /* media */
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 1px 6px 0 rgb(157, 157, 157);
+        }
+
+        .mainsec .bar .search_icon {
+            margin-left: 20px;
+        }
+
+        .mainsec .bar #search {
+            height: 43px;
+            width: 77%;
+            border: none;
+            border-radius: 30px;
+            padding-inline-start: 32px;
+        }
+
+        .mainsec .bar .voice {
+            height: 20px;
+            position: relative;
+            top: 5px;
+            left: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .mainsec .bar {
+                width: 450px;
+            }
+
+            .mainsec .bar #search {
+                width: 72%;
+            }
+        }
+
+        .mainsec .button {
+            background-color: #f5f5f5;
+            border: none;
+            color: #707070;
+            font-size: 15px;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .mainsec .button:hover {
+            border: 1px solid #c8c8c8;
+            padding: 9px 19px;
+            color: #808080;
+        }
+
+        .mainsec .button:focus {
+            border: 1px solid #4885ed;
+            padding: 9px 19px;
+        }
+
+        #bottom_btn {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            padding: 10px 17px 10px 17px;
+            border: 0;
+            border-radius: 30px;
+            background-color: #ffce8a;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topsec">
+        <div>Gmail</div>
+        <div>Images</div>
+        <div id="more_icon">
+            <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+        </div>
+        <div id="profile">
+            <img src="./img/snamed.png" alt="unmaned">
+        </div>
+    </div>
+
+    <div class="mainsec">
+        <img id="google" src="./img/google1.png" alt="google img">
+        <div class="bar">
+            <i class="fa-solid fa-magnifying-glass search_icon" style="color: #727272;"></i>
+            <input type="text" name="search" id="search" placeholder="Search Google or type a URL">
+            <a href="#"> <img class="voice"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
+                    title="Search by Voice"></a>
+        </div>
+        <div class="buttons">
+            <button class="button" type="button">Google Search</button>
+            <button class="button" type="button">I'm Feeling Lucky</button>
+        </div>
+    </div>
+
+    <button id="bottom_btn"><i class="fa-solid fa-pen fa-sm"></i>&nbsp Customize Chrome</button>
+
+    <script src="https://kit.fontawesome.com/15a00c5ce9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
