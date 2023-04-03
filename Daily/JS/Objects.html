@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <h1>Objects</h1>
+    <script>
+        // primitive datatype (nn bb ss u)
+        let a = null;
+        let b = 21;
+        let c = true;
+        let d = BigInt("531");
+        let e = "Sarthak";
+        let f = Symbol("I am a nice symbol");
+        let g = undefined;
+
+        console.log("variavle:", a, "type:", typeof (a));
+        console.log("variavle:", b, "type:", typeof (b));
+        console.log("variavle:", c, "type:", typeof (c));
+        console.log("variavle:", d, "type:", typeof (d));
+        console.log("variavle:", e, "type:", typeof (e));
+        console.log("variavle:", f, "type:", typeof (f));
+
+        // non-primitive datatype (Object)
+        let student = {
+            "name": "sarthak",
+            "phno": 1234567890,
+            "marks": 80
+        }
+
+        console.log(student["name"]);
+        console.log(student["phno"]);
+        console.log(student["marks"]);
+
+        let dict = {};
+        dict.konichiwa = "Good Afternoon";
+        dict.iie = "No";
+        dict.hai = "Yes";
+        dict.sensei = "Teacher";
+        dict.sei = "Student";
+
+        for (const a in dict) {
+            console.log(a, dict[a])
+        }
+
+        let str = "sp"
+        for (const a of str) {
+            console.log(a, str[a])
+        }
+
+        // console.log(dict);
+    </script>
+</body>
+
+</html>
